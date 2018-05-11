@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".fragment.PlaceInfo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Address -->
+        <TableRow
+            android:id="@+id/place_info_addr_row"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Address"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/place_info_addr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <!-- Phone number -->
+        <TableRow
+            android:id="@+id/place_info_phone_row"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Phone Number"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/place_info_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:autoLink="phone"
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <!-- Price level -->
+        <TableRow
+            android:id="@+id/place_info_price_row"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Price Level"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/place_info_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <!-- Rating -->
+        <TableRow
+            android:id="@+id/place_info_rating_row"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rating"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2">
+                <RatingBar
+                    android:id="@+id/place_info_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:layout_gravity="center_vertical"
+                    style="?android:attr/ratingBarStyleSmall"
+                    />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- Google page -->
+        <TableRow
+            android:id="@+id/place_info_googlepage_row"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Google Page"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/place_info_googlepage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:autoLink="web"
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <!-- Website -->
+        <TableRow
+            android:id="@+id/place_info_website_row"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Website"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/place_info_website"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:autoLink="web"
+                android:textSize="15dp"/>
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

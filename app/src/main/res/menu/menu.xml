@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_twitter"
+        android:title="Twitter"
+        android:icon="@drawable/share"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_favor"
+        android:title="Favor"
+        android:icon="@drawable/heart_outline_white"
+        app:showAsAction="always"
+        android:visible="true"/>
+
+    <item android:id="@+id/action_unfavor"
+        android:title="Favor"
+        android:icon="@drawable/heart_fill_white"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+</menu>

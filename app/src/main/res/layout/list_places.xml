@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+    
+    <ImageView
+        android:id="@+id/place_icon"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp" />
+    
+    <LinearLayout
+        android:id="@+id/place_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nameebretbrbefb erbryehntyrn"
+            android:textStyle="bold"
+            android:textSize="13dp"/>
+        <TextView
+            android:id="@+id/place_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="address febrgb regrtbetwb rebgtrebhret febrtebretb rebtreb erwbggte"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/place_favor"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:src="@drawable/heart_outline_black"
+        android:background="@null"/>
+    <ImageButton
+        android:id="@+id/place_unfavor"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:src="@drawable/heart_fill_red"
+        android:visibility="gone"
+        android:background="@null"/>
+</LinearLayout>

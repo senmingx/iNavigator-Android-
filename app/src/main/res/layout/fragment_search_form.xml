@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/fragment_search_form"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Keyword -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keyword:"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/error_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter mandatory field"
+        android:paddingLeft="10dp"
+        android:textSize="13dp"
+        android:visibility="gone"
+        android:textColor="@color/colorError"/>
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter keyword"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textScaleX="1"
+        android:paddingLeft="15dp"/>
+
+    <!-- category -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/categories"
+        android:spinnerMode="dropdown"/>
+
+    <!-- Distance -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance (in miles)"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter distance (default 10 miles)"
+        android:singleLine="true"
+        android:paddingLeft="15dp" />
+
+    <!-- From -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp" />
+    <RadioGroup
+        android:id="@+id/from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/curr_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current location" />
+        <RadioButton
+            android:id="@+id/other_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other. Specify Location" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/error_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter mandatory field"
+        android:paddingLeft="10dp"
+        android:textSize="13dp"
+        android:visibility="gone"
+        android:textColor="@color/colorError"/>
+    <AutoCompleteTextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:hint="Type in the location"
+        android:completionHint="Type in the location"
+        android:completionThreshold="1"
+        android:dropDownHorizontalOffset="5dp"
+        android:singleLine="true" />
+
+    <!-- Search, Clear -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="search"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="clear"/>
+    </LinearLayout>
+</LinearLayout>
